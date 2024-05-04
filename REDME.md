@@ -53,3 +53,7 @@ El comando `git commit`  se utiliza para crear un nuevo commit en Git, que repre
 4. Realizar un commit sin agregar archivos explícitamente:
     `git commit -m "Mensaje del commit" --only`
     >Este comando realiza un commit únicamente con los archivos que ya están en el área de preparación, omitiendo cualquier archivo que no haya sido previamente agregado con git add.
+
+
+## RESUMEN GRAFICO DE COMO FUNCIONA GIT INIT, ADD y COMMIT
+![Grafico de 3 comandos basicos](/cursoGit/imagenes/gitclase1.png "Resumen grafico")
