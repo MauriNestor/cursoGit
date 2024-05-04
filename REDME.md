@@ -2,6 +2,28 @@
 
 ## Clase 1
 
+## Estados en Git
+
+### Modificado (Modified):
+Este es el estado en el que se encuentran los archivos que han sido modificados en tu directorio de trabajo desde el último commit. Estos cambios aún no se han preparado para el próximo commit.
+
+>en vscode se lo representa con una **M**:
+
+![modified](/cursoGit/imagenes/M.png)
+
+
+### Preparado (Staged o Staging Area):
+También conocido como "staging area", este es el estado intermedio donde se preparan los cambios antes de realizar un commit. Los archivos en este estado han sido marcados para ser incluidos en el próximo commit, pero aún no se han confirmado definitivamente en el historial del repositorio.
+
+>en vscode se lo representa con una **A**:
+
+### Confirmado (Committed):
+Este es el estado final y más estable de tus archivos, donde se almacenan los commits confirmados en tu repositorio. Los archivos en este estado representan una versión estable de tu proyecto en un momento específico en la historia del repositorio.
+
+Estos tres estados reflejan el flujo de trabajo típico en Git: modificas archivos en tu directorio de trabajo, agregas los cambios deseados al área de preparación y luego confirmas esos cambios en el repositorio como un nuevo commit.
+
+## Comandos 
+
 ### `git init`
 
 El comando `git init` se utiliza para iniciar un nuevo repositorio Git en un directorio local. Este comando crea un nuevo subdirectorio llamado `.git` que contiene todos los archivos necesarios para el repositorio.
