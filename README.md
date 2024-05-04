@@ -9,7 +9,7 @@ Este es el estado en el que se encuentran los archivos que han sido modificados 
 
 >en vscode se lo representa con una **M**:
 
-![modified](/cursoGit/imagenes/M.png)
+![modified](/imagenes/M.png)
 
 
 ### Preparado (Staged o Staging Area):
@@ -17,11 +17,11 @@ También conocido como "staging area", este es el estado intermedio donde se pre
 
 >en vscode se lo representa con una **U** antes de ser agredado
 
-![Staged o Staging Area](/cursoGit/imagenes/U.png)
+![Staged o Staging Area](/imagenes/U.png)
 
 >en vscode se lo representa con una **A** despues de ser de ser agregado con git add:
 
-![Staged o Staging Area](/cursoGit/imagenes/A.png)
+![Staged o Staging Area](/imagenes/A.png)
 
 
 ### Confirmado (Committed):
@@ -33,10 +33,10 @@ Este es el estado final y más estable de tus archivos, donde se almacenan los c
 - es un puntero especial que indica la ubicación actual en el historial de commits del repositorio. 
 - Señala al commit en el que se esta trabajando
 
-![Staged o Staging Area](/cursoGit/imagenes/head.png)
+![Staged o Staging Area](/imagenes/head.png)
 
 - con el comando `git log --online` se identifica en donde esta el HEAD con facilidad.
-![Staged o Staging Area](/cursoGit/imagenes/headCap.png)
+![Staged o Staging Area](/imagenes/headCap.png)
 
 ### Comandos troncales
 
