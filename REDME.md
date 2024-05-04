@@ -9,6 +9,8 @@ El comando `git init` se utiliza para iniciar un nuevo repositorio Git en un dir
 #### Uso:
     git init
 
+---
+
 ### `git add`
 
 El comando `git add`  se utiliza para agregar cambios de archivos al área de preparación (staging area) para el próximo commit en Git. 
@@ -30,4 +32,24 @@ El comando `git add`  se utiliza para agregar cambios de archivos al área de pr
 
     `git add nombre_directorio/`
 
+---
+### `git commit`
 
+[que significa commit?](https://es.wikipedia.org/wiki/Commit)
+
+El comando `git commit`  se utiliza para crear un nuevo commit en Git, que representa un conjunto de cambios en tu repositorio. Aquí tienes algunos ejemplos de cómo usar git commit:
+#### Uso, ejemplo y variantes:
+
+1. Realizar un commit con un mensaje simple
+
+    `git commit -m "Mensaje del commit"`
+2. Incluir todos los cambios realizados en el commit:
+
+    `git commit -a -m "Mensaje del commit"`
+
+3. Editar el mensaje del último commit:
+    `git commit --amend`
+
+4. Realizar un commit sin agregar archivos explícitamente:
+    `git commit -m "Mensaje del commit" --only`
+    >Este comando realiza un commit únicamente con los archivos que ya están en el área de preparación, omitiendo cualquier archivo que no haya sido previamente agregado con git add.
