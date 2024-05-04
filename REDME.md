@@ -87,3 +87,18 @@ El comando `git commit`  se utiliza para crear un nuevo commit en Git, que repre
 
 ## RESUMEN GRAFICO DE COMO FUNCIONA GIT INIT, ADD y COMMIT
 ![Grafico de 3 comandos basicos](/cursoGit/imagenes/gitclase1.png "Resumen grafico")
+
+
+### `git status `
+ se utiliza para obtener información sobre el estado actual del repositorio Git. 
+ 1. **Ver archivos modificados:** git status muestra una lista de los archivos que han sido modificados en tu directorio de trabajo desde el último commit.
+ 2. **Ver archivos en el área de preparación:** Muestra los archivos que han sido agregados al área de preparación (staging area) y que están listos para ser incluidos en el próximo commit.
+3. **Ver archivos no rastreados:** git status también muestra los archivos que aún no han sido rastreados por Git y que no forman parte del control de versiones.
+
+### `git restore `
+
+
+### `git log `
+se utiliza para mostrar el historial de commits en un repositorio Git. Proporciona una lista detallada de los commits que han ocurrido en la rama actual, comenzando desde el commit 
+
+## `que es HEAD?`
