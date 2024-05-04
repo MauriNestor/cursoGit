@@ -29,6 +29,14 @@ Este es el estado final y más estable de tus archivos, donde se almacenan los c
 
 >en vscode se lo representa con una **ninguna letra(desaparecen las demas)**:
 
+#### `que es HEAD?`
+- es un puntero especial que indica la ubicación actual en el historial de commits del repositorio. 
+- Señala al commit en el que se esta trabajando
+
+![Staged o Staging Area](/cursoGit/imagenes/head.png)
+
+- con el comando `git log --online` se identifica en donde esta el HEAD con facilidad.
+![Staged o Staging Area](/cursoGit/imagenes/headCap.png)
 
 ### Comandos troncales
 
@@ -96,10 +104,6 @@ El comando `git commit`  se utiliza para crear un nuevo commit en Git, que repre
  2. **Ver archivos en el área de preparación:** Muestra los archivos que han sido agregados al área de preparación (staging area) y que están listos para ser incluidos en el próximo commit.
 3. **Ver archivos no rastreados:** git status también muestra los archivos que aún no han sido rastreados por Git y que no forman parte del control de versiones.
 
-
-#### `git restore `
-
-
 #### `git log `
 se utiliza para mostrar el historial de commits en un repositorio Git. Proporciona una lista detallada de los commits que han ocurrido en la rama actual, comenzando desde el commit 
 
@@ -117,4 +121,5 @@ se utiliza para mostrar el historial de commits en un repositorio Git. Proporcio
     `git log nombre_rama`
 
 
-#### `que es HEAD?`
+
+#### `git restore `
