@@ -123,3 +123,14 @@ se utiliza para mostrar el historial de commits en un repositorio Git. Proporcio
 
 
 #### `git restore `
+
+---
+
+## Clase 2
+
+### Ramas
+
+> **que es una rama?** ->  línea de desarrollo independiente que permite trabajar en funcionalidades, correcciones de errores o experimentos sin afectar la rama principal del proyecto
+
+#### funcion de una rama
+- Desarrollo paralelo
