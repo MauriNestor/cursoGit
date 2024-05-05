@@ -134,3 +134,10 @@ se utiliza para mostrar el historial de commits en un repositorio Git. Proporcio
 
 #### funcion de una rama
 - Desarrollo paralelo
+
+### Maneras de crear una rama
+
+1. Crear una rama y cambiar a ella de inmediato: `git checkout -b nueva_rama`
+2. Crear una rama sin cambiar a ella `git branch nueva_rama`
+3. Crear una rama basada en otra rama: `git checkout -b nueva_rama rama_base`
+4. Crear una rama apartir de un commit en especifico `Crear una nueva rama desde un commit específico:`
