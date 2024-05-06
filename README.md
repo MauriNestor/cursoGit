@@ -121,9 +121,6 @@ se utiliza para mostrar el historial de commits en un repositorio Git. Proporcio
     `git log nombre_rama`
 
 
-
-#### `git restore `
-
 ---
 
 ## Clase 2
@@ -145,3 +142,15 @@ se utiliza para mostrar el historial de commits en un repositorio Git. Proporcio
 ## Navegar entre ramas
 - Cambiar a una rama específica: `git checkout nombre_rama`
 - Cambiar a la última rama utilizada: `git checkout -`
+
+---
+## Clase 3
+
+#### `git restore `
+ restaurar archivos en el directorio de trabajo o en el área de preparación a un estado específico, ya sea deshaciendo cambios no deseados o revirtiendo archivos a una versión anterior.
+
+#### Usos
+1. Restaurar un archivo en el directorio de trabajo a su estado previo al último commit: `git restore nombre_archivo`
+2. Restaurar un archivo a una versión específica: `git restore --source=commit_hash nombre_archivo`
+3. Restaurar un archivo eliminado: `git restore --source=commit_hash --staged nombre_archivo_eliminado`
+4. Restaurar un archivo en el área de preparación a su estado previo al último commit:`git restore--staged nombre_archivo`
