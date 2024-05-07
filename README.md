@@ -146,6 +146,11 @@ se utiliza para mostrar el historial de commits en un repositorio Git. Proporcio
 ### Borrar ramas
 - borrar una rama que ya a sido fusionada con la rama que estamos ejecutando: `git branch -d <nombre_rama>`
 - Forzar la eliminación de una rama si aun no se fusiono con otra `git branch -D nombre_rama`
+### Podar ramas 
+- ver que ramas de borrarian en el repo remoto llamado origin, útil para ver qué referencias se eliminarían sin realizar realmente ninguna acción de eliminación.
+`git remote prune origin --dry-run`
+- para eliminar todas las ramas que no sean necesarias: `git remote prune`
+> **tip**: Cuando se elimina una rama en el repositorio remoto, Git no la eliminará automáticamente de tu repositorio local. Esto puede dejar referencias locales a ramas que ya no existen en el repositorio remoto.
 
 ---
 ## Clase 3
