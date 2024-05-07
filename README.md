@@ -139,9 +139,13 @@ se utiliza para mostrar el historial de commits en un repositorio Git. Proporcio
 3. Crear una rama basada en otra rama: `git checkout -b nueva_rama rama_base`
 4. Crear una rama apartir de un commit en especifico `Crear una nueva rama desde un commit específico:`
 
-## Navegar entre ramas
+### Navegar entre ramas
 - Cambiar a una rama específica: `git checkout nombre_rama`
 - Cambiar a la última rama utilizada: `git checkout -`
+
+### Borrar ramas
+- borrar una rama que ya a sido fusionada con la rama que estamos ejecutando: `git branch -d <nombre_rama>`
+- Forzar la eliminación de una rama si aun no se fusiono con otra `git branch -D nombre_rama`
 
 ---
 ## Clase 3
