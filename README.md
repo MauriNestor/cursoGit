@@ -174,13 +174,13 @@ Son usados para contribuir proyectos de otras personas.
 #### Acciones
 - Se usa git hub actions para compilar, probar, desplegar y publicar tu código de forma automatizada.
 #### Issues
-- 
+- herramienta que permite realizar un seguimiento de tareas, problemas, ideas
 #### claves ssh
 - se utilizan para autenticar la identidad de un usuario en un sistema remoto de forma segura
 - Consisten en una clave pública y una clave privada. 
 - para crear estas claves:
 `ssh-keygen -t rsa -b 4096 -C "tu_correo_electronico@example.com"`
-#### git remote
+#### `git remote`
 -  administrar conexiones remotas a repositorios
 ##### Usos
 1. Enlaza un nuevo repo remoto con el nombre especificado y la URL proporcionada:
@@ -193,10 +193,16 @@ Son usados para contribuir proyectos de otras personas.
 6. Elimina referencias locales a ramas remotas que ya no existen en el servidor remoto:
 `git remote prune origin`
 
+### Algunos comandos utiles(parte 2)
+#### `creacion de ramas remotas`
+1. primero se debe crear una rama en la repo local
+2. confirmarlos
+3. enviar la rama al repo remoto: `git push origin nueva_rama`
 
-creando rama remota
-git fetch   
-git clone 
+#### `git clone` 
+se utiliza para crear una copia local de un repositorio Git remoto.
+`git clone <URL_del_repositorio_remoto> [<nombre_de_directorio_local>]`
 
+git fetch
 git revert 
 git reset
