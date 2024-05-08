@@ -154,6 +154,18 @@ se utiliza para mostrar el historial de commits en un repositorio Git. Proporcio
 
 ---
 ## Clase 3
+### `git push`
+se utiliza para enviar cambios locales confirmados a un repositorio remoto. 
+#### Usos y variantes
+1. Para enviar los cambios locales de una rama específica al repositorio remoto:`git push origin nombre_rama`
+2. Si queremos enviar los cambios locales a una rama específica del repositorio remoto, pero queremos que la rama remota tenga un nombre diferente:
+`git push origin nombre_rama_local:nombre_rama_remota`
+3. Configura la rama local para que haga un seguimiento de la rama remota después de enviar los cambios.
+`git push -u origin nombre_rama`
+4. forzar la actualizacion de una rama: `git push --force origin nombre_rama`
+5. envia todas las ramas locales al remoto: `git push --all origin`
+6. envia todas las etiquetas locales al repo remoto: `git push --tags origin`
+7.  Realiza una simulación de la operación de push: `git push --dry-run origin nombre_rama`
 
 #### `git restore `
  restaurar archivos en el directorio de trabajo o en el área de preparación a un estado específico, ya sea deshaciendo cambios no deseados o revirtiendo archivos a una versión anterior.
@@ -206,5 +218,14 @@ Son usados para contribuir proyectos de otras personas.
 #### `git fetch` 
 - actualiza tu repositorio local con la información más reciente del repositorio remoto
 `git fetch <nombre_remoto>`
-git revert 
-git reset
+
+## Algunas preguntas curiosas
+> hacer push desde una rama secundaria a la main, no hara nada?
+
+- No, porque se hace una asignacion de uno a uno, esto quiere decir que no hay la posibilidad 
+de modoficar una rama en la nube desde una rama local diferente
+
+> hay alguna manera de hacerlo?
+- si, haciendo el siguiente comando: git push login origin login: main (considerado peligroso)
+
+
