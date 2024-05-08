@@ -200,9 +200,11 @@ Son usados para contribuir proyectos de otras personas.
 3. enviar la rama al repo remoto: `git push origin nueva_rama`
 
 #### `git clone` 
-se utiliza para crear una copia local de un repositorio Git remoto.
+- se utiliza para crear una copia local de un repositorio Git remoto.
 `git clone <URL_del_repositorio_remoto> [<nombre_de_directorio_local>]`
 
-git fetch
+#### `git fetch` 
+- actualiza tu repositorio local con la información más reciente del repositorio remoto
+`git fetch <nombre_remoto>`
 git revert 
 git reset
