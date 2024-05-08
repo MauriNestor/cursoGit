@@ -173,16 +173,30 @@ se utiliza para mostrar el historial de commits en un repositorio Git. Proporcio
 Son usados para contribuir proyectos de otras personas.
 #### Acciones
 - Se usa git hub actions para compilar, probar, desplegar y publicar tu código de forma automatizada.
-
+#### Issues
+- 
 #### claves ssh
 - se utilizan para autenticar la identidad de un usuario en un sistema remoto de forma segura
 - Consisten en una clave pública y una clave privada. 
 - para crear estas claves:
 `ssh-keygen -t rsa -b 4096 -C "tu_correo_electronico@example.com"`
+#### git remote
+-  administrar conexiones remotas a repositorios
+##### Usos
+1. Enlaza un nuevo repo remoto con el nombre especificado y la URL proporcionada:
+`git remote add <nombre> <URL>`
+2. Elimina la conexión remota con el nombre especificado: `git remote remove origin`
+3. Cambia el nombre de una conexión remota de <nombre_viejo> a <nombre_nuevo>
+`git remote rename origin upstream`
+4. Muestra una lista de todas las conexiones remotas junto con sus URL: `git remote -v`
+5. Muestra información detallada sobre la conexión remota: `git remote show origin`
+6. Elimina referencias locales a ramas remotas que ya no existen en el servidor remoto:
+`git remote prune origin`
 
-git remote add origin 
 
-issues
 creando rama remota
-git fetch
+git fetch   
 git clone 
+
+git revert 
+git reset
