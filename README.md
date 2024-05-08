@@ -163,3 +163,20 @@ se utiliza para mostrar el historial de commits en un repositorio Git. Proporcio
 2. Restaurar un archivo a una versión específica: `git restore --source=commit_hash nombre_archivo`
 3. Restaurar un archivo eliminado: `git restore --source=commit_hash --staged nombre_archivo_eliminado`
 4. Restaurar un archivo en el área de preparación a su estado previo al último commit:`git restore--staged nombre_archivo`
+
+## Clase 4
+
+### **Un poco de conceptos/teoria**
+
+#### forks
+- copia de un repositorio en el que cualquier usuario puede trabajar de forma independiente.
+Son usados para contribuir proyectos de otras personas.
+#### Acciones
+- Se usa git hub actions para compilar, probar, desplegar y publicar tu código de forma automatizada.
+
+git remote add origin 
+
+issues
+creando rama remota
+git fetch
+git clone 
