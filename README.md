@@ -174,6 +174,12 @@ Son usados para contribuir proyectos de otras personas.
 #### Acciones
 - Se usa git hub actions para compilar, probar, desplegar y publicar tu código de forma automatizada.
 
+#### claves ssh
+- se utilizan para autenticar la identidad de un usuario en un sistema remoto de forma segura
+- Consisten en una clave pública y una clave privada. 
+- para crear estas claves:
+`ssh-keygen -t rsa -b 4096 -C "tu_correo_electronico@example.com"`
+
 git remote add origin 
 
 issues
