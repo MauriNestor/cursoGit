@@ -345,6 +345,59 @@ Se basa en la creación de Pull Requests que serán discutidas para que se integ
 ![tronco](/imagenes/tronco.png)
 
 ##### Funcionamiento
-En el Trunk Based Development, todos los cambios se desarrollan y prueban directamente en la rama principal (trunk). Esto significa que los desarrolladores realizan sus cambios directamente sobre la rama principal y no se crean ramas separadas para cada función o corrección de errores.
+- todos los cambios se desarrollan y prueban directamente en la rama principal (trunk). Esto significa que los desarrolladores realizan sus cambios directamente sobre la rama principal y no se crean ramas separadas para cada función o corrección de errores.
+
+- Sigue el siguiente flujo de trabajo:
+
+![tronco](/imagenes/tronco2.png)
+
+##### Algunas consideraciones
+- Necesitas contar con un sistema de Integración Continua
+- El equipo trabaja usando técnicas como la programación a pares o la programación en grupo
+- Se deben hacer commits constantemente
+- Existen redes de seguridad automatizadas que deshacen un pase a producción en el caso que algo haya salido mal.
+- no hay“días de despliegue”
+##### Algunos beneficios
+- Integración continua y menos fricción
+- Menos trabajo manual
+- Despliegue a producción continuo
 
 
+#### Ship, Show, Ask
+combina la idea de crear Pull Request con la habilidad de seguir publicando cambios rápidamente.
+Los cambios que creamos en el repositorio se categorizan en tres:
+- Ship: Se fusiona en la rama principal sin revisión
+- Show: Abre una petición de cambios para que sean revisados por CI pero se fusiona inmediatamente
+- Ask: Abre una PR para discutir los cambios antes de fusionarlos
+
+![SSA](/imagenes/ssa.png)
+
+##### Ship
+Ship significa que vamos a hacer un cambio directamente a la rama principal.
+- El commit va directamente a producción, sin pasar por Pull Request
+
+![Ship](/imagenes/ship.png)
+
+##### Show
+Se usa Pull Request pero no esperamos revisiones manuales del código. Es decir, esperamos que los tests automatizados, pruebas de cobertura y
+validación de código sean exitosos pero no que otra persona revise el código.
+
+![Show](/imagenes/show.png)
+
+##### Ask
+similar a Show pero aquí sí esperamos al feedback de nuestro equipo ante de fusionar la rama.
+- La idea es que la rama dure el mínimo tiempo posible para no bloquear el trabajo de otros miembros del equipo
+- Con Ask sí esperamos que el equipo revise la Pull Request. No esperamos aprobación, esperamos conversación para eliminar la incertidumbre.
+
+![ask](/imagenes/ask.png)
+
+##### reglas
+- Tenemos un buen sistema de CI/CD
+- Confiamos en el equipo y existen buenas prácticas de desarrollo.
+- Las ramas son lo más pequeñas posibles
+- El equipo ha sabido lidiar con el ego individual
+
+#### Conclusiones sobre las estrategias de flujo de trabajo 
+- Cada equipo, cada desarrollo, cada proyecto... son circunstancias diferentes que seguro, hay que lidiar de forma distinta.
+- Adptar cualquiera de los flujo de trabajo que mejor se adapte
+- No cambiar la metodologia de trabajo de un dia para otro.
