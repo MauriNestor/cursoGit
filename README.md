@@ -265,9 +265,10 @@ Ramas temporales que seran eliminadas, una vez q sean fucionadas.
     ![feature](/imagenes/feature.png)
     
     > **Como funciona el `--no-ff`**
+
         el no ff hace que se cree un nuevo commit donde no se perderan los commits de la rama que esta siendo mergeada
         
-        ![no ff](/imagenes/ff.png)
+    ![noff](/imagenes/ff.png)
     
     
     - Se crean desde: develop
