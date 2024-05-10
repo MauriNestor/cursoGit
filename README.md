@@ -143,6 +143,16 @@ se utiliza para mostrar el historial de commits en un repositorio Git. Proporcio
 - Cambiar a una rama específica: `git checkout nombre_rama`
 - Cambiar a la última rama utilizada: `git checkout -`
 
+
+### Fusionar ramas `git merge`
+- Se usa para incorporar cambios de una rama a la rama en la que ejecutamos el comando.
+![git merge](/imagenes/merge.png)
+### Usos y variantes
+1. Fusionar una rama secundaria en la rama actual: `git merge feature-branch`
+- Modificando el mensaje de commit
+- Abre el editor antes de hacer el commit: `git merge --edit`
+- Evita que haga commit automáticamente: `git merge --no-commit`
+
 ### Borrar ramas
 - borrar una rama que ya a sido fusionada con la rama que estamos ejecutando: `git branch -d <nombre_rama>`
 - Forzar la eliminación de una rama si aun no se fusiono con otra `git branch -D nombre_rama`
