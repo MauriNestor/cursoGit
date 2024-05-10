@@ -337,3 +337,14 @@ Se basa en la creación de Pull Requests que serán discutidas para que se integ
 - cuando se tiene que hacer el push de la rama auxiliar(por asi decirlo) al repo remoto se crea el PR, donde se indica la rama base, y la rama a fusionar, proporciona campos para el contexto y se crea el RP.
 
 ![github flow](/imagenes/giithub.png)
+
+#### Trunk Based Development
+ enfoque de desarrollo de software que se centra en mantener una única rama principal (trunk) como la fuente de verdad en el repositorio de código. 
+ - A diferencia de otros modelos de ramificación más complejos, como GitFlow, que utilizan múltiples ramas para desarrollar y entregar características, TBD simplifica el proceso al fomentar el desarrollo directamente en la rama principal.
+
+![tronco](/imagenes/tronco.png)
+
+##### Funcionamiento
+En el Trunk Based Development, todos los cambios se desarrollan y prueban directamente en la rama principal (trunk). Esto significa que los desarrolladores realizan sus cambios directamente sobre la rama principal y no se crean ramas separadas para cada función o corrección de errores.
+
+
