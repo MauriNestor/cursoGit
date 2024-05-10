@@ -238,4 +238,92 @@ de modoficar una rama en la nube desde una rama local diferente
 > hay alguna manera de hacerlo?
 - si, haciendo el siguiente comando: git push login origin login: main (considerado peligroso)
 
+## Clase 5
+
+### Flujos de trabajo y estrategias de ramas en Git
+- Todas las estrategias se basan esencialmente en la forma en la que vas a tratar de crear (o no) ramas y fusionarlas a la rama principal.
+
+#### GIT FLOW
+##### Ramas Principales
+Se basa en la creacion de 2 ramas, la main(produccion) y la develop(donde se hacen las nuevas funciones para produccionn)Solo esta rama
+develop puede hacerse el merge a la main 
+![gitflow](/imagenes/gitflow.png)
+
+##### Ramas de Apoyo
+Ramas temporales que seran eliminadas, una vez q sean fucionadas.
+- **Feature**: Cuando trabajas en una nueva característica para el proyecto.
+    ```
+        git checkout -b feature-new-search develop
+        # aqui trabajamos los commits que sean necesarios, para q sea unida al main
+        # hacemos merge desde develop a features 
+        git merge --no-ff feature-new-search
+        # borramos la rama feature y pusheamos al repo
+        git branch -d feature-new-search
+        git push origin develop
+    ```
+
+    ![feature](/imagenes/feature.png)
+    
+    > **Como funciona el `--no-ff`**
+        el no ff hace que se cree un nuevo commit donde no se perderan los commits de la rama que esta siendo mergeada
+        
+        ![no ff](/imagenes/ff.png)
+    
+    
+    - Se crean desde: develop
+    - Se fusionan en develop
+    - Convención de nombre: feature-*
+
+- **Release**: Cuando preparas el lanzamiento de una nueva versión.
+    
+    para la creacion y fusion de esta rama se debe seguir algo parecidoa a esto:
+    
+    ```
+        ## 1. creamos la rama
+        git checkout -b release-1.2.0 develop
+        ## 2. hacemos un commit indicando la version
+        git commit -am "Bumped version number to 1.2.0"
+        ## 3. fusionar con develop y main con un tag
+        git switch main
+        git merge --no-ff release-1.2.0
+        git tag -a 1.2.0
+
+        git switch develop
+        git merge --no-ff release-1.2.0
+
+        ##probablemente haya conflictos con branch develop, lo solucionamos con un commit y luego borramos la rama release
+        git branch -d release-1.2.0s
+    ```
+    - se crean de develop
+    - se fucionan con develop y main
+    - convension de nombre **release-**
+
+
+- **Hotfix**: Para trabajar en cambios imprevistos como parches para arreglar un bug o un problema en producción. Traduciodo como parche o paño caliente
+    para la creacion y fusion de esta rama se debe seguir algo parecido a a esto:
+    ```
+        #1. creacion de rama
+        $ git switch -c hotfix-2.5.1 main
+
+        #Hacer bump de la versión es opcional y depende
+        ./bump-version.sh 2.5.1
+
+        # Hacemos el commit con el arreglo del problema
+        $ git commit -m "Fix bug causing app not working properly"
+
+        # Fusionamos la rama hotfix con la rama main
+        $ git switch main
+        $ git merge --no-ff hotfix-2.5.1
+
+        #tambien fusionar a la rama develop
+        $ git switch develop
+        $ git merge --no-ff hotfix-2.5.1
+
+        # y eliminamos esta rama
+        $ git branch -d hotfix-2.5.1
+    ```
+    > aveces que release ya este preparado, por lo q se deberia hacer el merge a release, xq luego esta hara merge con develop
+    - se crea desde main
+    - se fusiona con develop o release y main
+    - convension de nombre: -<version>
 
