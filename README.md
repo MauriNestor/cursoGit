@@ -328,3 +328,11 @@ Ramas temporales que seran eliminadas, una vez q sean fucionadas.
     - se fusiona con develop o release y main
     - convension de nombre: -<version>
 
+#### Github FLow
+Se basa en la creación de Pull Requests que serán discutidas para que se integren en la rama `main` que siempre está actualizada y lista para ser deployada
+- muy usada en proyectos de codigo abierto
+
+- cuando se tiene que hacer el push de la rama auxiliar(por asi decirlo) al repo remoto se crea el PR, donde se indica la rama base, y la rama a fusionar, proporciona campos para el contexto y se crea el RP.
+- 
+
+![feature](/imagenes/feature.png)
