@@ -94,7 +94,7 @@ El comando `git commit`  se utiliza para crear un nuevo commit en Git, que repre
 
 
 ## RESUMEN GRAFICO DE COMO FUNCIONA GIT INIT, ADD y COMMIT
-![Grafico de 3 comandos basicos](/cursoGit/imagenes/gitclase1.png "Resumen grafico")
+![Grafico de 3 comandos basicos](/imagenes/gitclase1.png "Resumen grafico")
 
 ### Comandos Utiles
 
