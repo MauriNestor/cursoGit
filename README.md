@@ -335,5 +335,5 @@ Se basa en la creación de Pull Requests que serán discutidas para que se integ
     >> abreviado PR, es una petición de cambios que se envía a través de una rama de GitHub. Lo que se pide es que los cambios que presenta la rama sean incorporados a otra rama (que normalmente es la rama principal pero no necesariamente tiene que ser siempre así).
 - github flow maneja 2 tipos de ramas, la **main** y cualquier otra rama que se necesite.
 - cuando se tiene que hacer el push de la rama auxiliar(por asi decirlo) al repo remoto se crea el PR, donde se indica la rama base, y la rama a fusionar, proporciona campos para el contexto y se crea el RP.
-![github flow](/imagenes/github.png)
 
+![github flow](/imagenes/giithub.png)
