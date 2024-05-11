@@ -511,3 +511,5 @@ ejemplo: `git config --global alias.hist "log --oneline --graph --decorate --all
 - `git bisect bad`
 - `git bisect good`
 - `git bisect reset`
+
+# FIN
