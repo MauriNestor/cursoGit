@@ -470,3 +470,43 @@ trabajan en base al historial sin afectarlo
 
 - `git checkout idCommit`: volver al pasado, y extraer funciones o archivos. Es util cuando un commit agrupa varias cosas. 
 - para traer archivos: `git checkout idCommit NOmbreArchivo.extension`
+
+## Clase 8
+### que son los hooks?
+ejecutar un script tras ejecutar un evento.
+### Hooks Del aldo del cliente 
+- prec-commit
+    - comprobar de no hacer muchos commits, y hacer uso de linter
+- prepare-commit-msg
+    - modificar mensaje de commit
+- commit-msg
+    - buenas practicas de prefijos en commit
+- post-commit
+    - discord de programadores
+- pre-push
+    - ejecutar una bateria de tests
+- post-checkout y post merge
+    - limpiar algunas ramas, la hacen merge
+### Hooks Del aldo del cliente 
+- pre-receive
+- update
+- post-receive
+### Alias
+permite renombrar comandos para q sea mas corto o para mas comodidad, para crear uno: `git config --global alias.nombre_alias "comando_git"`
+
+ejemplo: `git config --global alias.hist "log --oneline --graph --decorate --all"`
+
+### Hacks comands
+#### Guradar cambios temporalmente
+- `git stash`
+- `git satsh -u`
+- `git stash pop`
+    - cambiar de ramas, y lo guarda para continuar luego
+#### Aplicar cambios de commits en especifico
+- `git cherry-pick <SHA>`
+#### Detectar que commit es el que ha introducido un bug
+- `git bisect`
+- `git bisect start`
+- `git bisect bad`
+- `git bisect good`
+- `git bisect reset`
