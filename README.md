@@ -452,3 +452,21 @@ similar a Show pero aquí sí esperamos al feedback de nuestro equipo ante de fu
 - Es mucho más fácil revisar y aceptar una Pull Request que hace una sola cosa
 - Explica tu Pull Request
 - tener cuidado con el nombre del rama principal, puede ser main o master, ahora se usa main
+
+## Clase 7
+### Deshacer cambios
+se lo hace cuando dejo de funcionar el proyecto, recuperar alguna parte del codigo
+### Comandos destructivos
+afectan el historial de commits
+-  commit amend
+- `git reset` -- soft o hard : retornar a un commit sin poder volver al futuro.
+    - hard: descartar todos los commits q nos saltamos, borra todo 
+    - soft: mantiene cambios antes de volver al pasado. igual borra todo 
+- `git reset --soft HEAD~numero de commit al q quieres viajar`
+### Comandos no destructivos
+trabajan en base al historial sin afectarlo
+- `git revert HEAD~numero de commit al q quieres viajar`
+- tambien se puede traer archivos eliminados
+
+- `git checkout idCommit`: volver al pasado, y extraer funciones o archivos. Es util cuando un commit agrupa varias cosas. 
+- para traer archivos: `git checkout idCommit NOmbreArchivo.extension`
