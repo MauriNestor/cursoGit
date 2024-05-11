@@ -401,3 +401,54 @@ similar a Show pero aquí sí esperamos al feedback de nuestro equipo ante de fu
 - Cada equipo, cada desarrollo, cada proyecto... son circunstancias diferentes que seguro, hay que lidiar de forma distinta.
 - Adptar cualquiera de los flujo de trabajo que mejor se adapte
 - No cambiar la metodologia de trabajo de un dia para otro.
+
+### Clase 6 
+### Alguna buenas practicas acerca de commits
+ > **cada cuanto deberia hacer un commmit?**
+ >>hacer commits pequeños con significado, dividir el trabajo en pequeñas partes
+> **como escribir un buen commit**
+- usar el verbo imperativo: (Add, Change, Fix, Remove).
+    
+    por ejemplo:
+    - ...add a new search feature
+    - ...fix a problem with the topbar
+    - ...change the default system color
+    - ...remove a random notification
+- no usar punto final ni puntos suspensivos
+- usar maximo 50 caracteres para el mensaje
+- añiadir el texto necesario en el cuerpo del mensaje del commit
+    - `git commit -m "Add summary of commit" -m "This is a message to add more context."` o `git commit`
+- Usa un prefijo para tus commits para hacerlos más semánticos
+![SSA](/imagenes/commit.png)
+- algunos prefijos:
+    - feat: para una nueva característica para el usuario.
+    - fix: para un bug que afecta al usuario.
+    - perf: para cambios que mejoran el rendimiento del sitio.
+    - build: para cambios en el sistema de build, tareas de despliegue o instalación.
+    - ci: para cambios en la integración continua.
+    - docs: para cambios en la documentación.
+    - refactor: para refactorización del código como cambios de nombre de variables
+    o funciones.
+    - style: para cambios de formato, tabulaciones, espacios o puntos y coma, etc; no
+    afectan al usuario.
+    - test: para tests o refactorización de uno ya existente.
+- usar utilidades para hacer commit
+
+### Algunas buenas practiacs acerca de ramas
+- Sé consistente al nombrar tus ramas, dependiendo de como esté definido con el equipo
+- Usa el nombre de la acción que se realiza en la rama
+    por ejemplo:
+    - bug: Cambios de código para arreglar un bug conocido.
+    - feature: Desarrollo de una nueva característica.
+    - experiment: Experimentos que nunca serán fusionados.
+    - hotfix: Cambio rápido de un error crítico.
+- puedes usar los IDs de JIRA o el sistema de tickets que uses
+- no alterar el historial del proyecto(solo para casos especiales)
+- No hacer commit de código generado ni configuración particular
+### Algunas buenas practicas de pull request o PR
+- Léete el archivo CONTRIBUTING.md o sigue el estilo del repositorio, en caso se quiera contribuir
+- Respeta el estilo del repositorio
+- Enfoca tu código en una sola cosa
+- Es mucho más fácil revisar y aceptar una Pull Request que hace una sola cosa
+- Explica tu Pull Request
+- tener cuidado con el nombre del rama principal, puede ser main o master, ahora se usa main
