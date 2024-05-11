@@ -401,3 +401,35 @@ similar a Show pero aquí sí esperamos al feedback de nuestro equipo ante de fu
 - Cada equipo, cada desarrollo, cada proyecto... son circunstancias diferentes que seguro, hay que lidiar de forma distinta.
 - Adptar cualquiera de los flujo de trabajo que mejor se adapte
 - No cambiar la metodologia de trabajo de un dia para otro.
+
+### Clase 6 
+### Alguna buenas practicas
+ > **cada cuanto deberia hacer un commmit?**
+ >>hacer commits pequeños con significado, dividir el trabajo en pequeñas partes
+> **como escribir un buen commit**
+- usar el verbo imperativo: (Add, Change, Fix, Remove).
+    
+    por ejemplo:
+    - ...add a new search feature
+    - ...fix a problem with the topbar
+    - ...change the default system color
+    - ...remove a random notification
+- no usar punto final ni puntos suspensivos
+- usar maximo 50 caracteres para el mensaje
+- añiadir el texto necesario en el cuerpo del mensaje del commit
+    - `git commit -m "Add summary of commit" -m "This is a message to add more context."` o `git commit`
+- Usa un prefijo para tus commits para hacerlos más semánticos
+![SSA](/imagenes/commit.png)
+- algunos prefijos:
+    - feat: para una nueva característica para el usuario.
+    - fix: para un bug que afecta al usuario.
+    - perf: para cambios que mejoran el rendimiento del sitio.
+    - build: para cambios en el sistema de build, tareas de despliegue o instalación.
+    - ci: para cambios en la integración continua.
+    - docs: para cambios en la documentación.
+    - refactor: para refactorización del código como cambios de nombre de variables
+    o funciones.
+    - style: para cambios de formato, tabulaciones, espacios o puntos y coma, etc; no
+    afectan al usuario.
+    - test: para tests o refactorización de uno ya existente.
+- usar utilidades para hacer commit
