@@ -504,6 +504,7 @@ ejemplo: `git config --global alias.hist "log --oneline --graph --decorate --all
     - cambiar de ramas, y lo guarda para continuar luego
 #### Aplicar cambios de commits en especifico
 - `git cherry-pick <SHA>`
+    - trae cambios de un commit anterior, en archivos
 #### Detectar que commit es el que ha introducido un bug
 - `git bisect`
 - `git bisect start`
