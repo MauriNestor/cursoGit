@@ -445,4 +445,10 @@ similar a Show pero aquí sí esperamos al feedback de nuestro equipo ante de fu
 - puedes usar los IDs de JIRA o el sistema de tickets que uses
 - no alterar el historial del proyecto(solo para casos especiales)
 - No hacer commit de código generado ni configuración particular
-- 
+### Algunas buenas practicas de pull request o PR
+- Léete el archivo CONTRIBUTING.md o sigue el estilo del repositorio, en caso se quiera contribuir
+- Respeta el estilo del repositorio
+- Enfoca tu código en una sola cosa
+- Es mucho más fácil revisar y aceptar una Pull Request que hace una sola cosa
+- Explica tu Pull Request
+- tener cuidado con el nombre del rama principal, puede ser main o master, ahora se usa main
