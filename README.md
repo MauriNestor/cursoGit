@@ -403,7 +403,7 @@ similar a Show pero aquí sí esperamos al feedback de nuestro equipo ante de fu
 - No cambiar la metodologia de trabajo de un dia para otro.
 
 ### Clase 6 
-### Alguna buenas practicas
+### Alguna buenas practicas acerca de commits
  > **cada cuanto deberia hacer un commmit?**
  >>hacer commits pequeños con significado, dividir el trabajo en pequeñas partes
 > **como escribir un buen commit**
@@ -433,3 +433,16 @@ similar a Show pero aquí sí esperamos al feedback de nuestro equipo ante de fu
     afectan al usuario.
     - test: para tests o refactorización de uno ya existente.
 - usar utilidades para hacer commit
+
+### Algunas buenas practiacs acerca de ramas
+- Sé consistente al nombrar tus ramas, dependiendo de como esté definido con el equipo
+- Usa el nombre de la acción que se realiza en la rama
+    por ejemplo:
+    - bug: Cambios de código para arreglar un bug conocido.
+    - feature: Desarrollo de una nueva característica.
+    - experiment: Experimentos que nunca serán fusionados.
+    - hotfix: Cambio rápido de un error crítico.
+- puedes usar los IDs de JIRA o el sistema de tickets que uses
+- no alterar el historial del proyecto(solo para casos especiales)
+- No hacer commit de código generado ni configuración particular
+- 
